@@ -1,10 +1,5 @@
-# Hand gesture recognition using neural networks
+# Hand Gesture Recognition Using Neural Networks
 
-## Developers
-
-Santhosh Kumar [https://www.linkedin.com/in/santhoshkumar/]
-
-Sanyog Yadav [https://www.linkedin.com/in/sanyog-yadav-cfa]
 
 ## Problem Statement
 
@@ -19,30 +14,6 @@ The gestures are continuously monitored by the webcam mounted on the TV. Each ge
 - Stop: Pause the movie
 
 Each video is a sequence of 30 frames (or images)
-
-## Understanding the Dataset
-
-The training data consists of a few hundred videos categorised into one of the five classes. Each video (typically 2-3 seconds long) is divided into a sequence of 30 frames(images). These videos have been recorded by various people performing one of the five gestures in front of a webcam - similar to what the smart TV will use.
-
-The data is in a [zip](https://www.dropbox.com/s/72jzl3fqvk1rk2w/gesture_data.zip?dl=0) file. The zip file contains a 'train' and a 'val' folder with two CSV files for the two folders.
-
-![dataset](images/dataset1.png)
-
-These folders are in turn divided into subfolders where each subfolder represents a video of a particular gesture.
-
-![dataset](images/dataset2.png)
-
-Each subfolder, i.e. a video, contains 30 frames (or images). 
-
-- Thumbs Up
-  
-![dataset](images/gesture_thumbs_up.png)
-
-- Right Swipe
-
-![dataset](images/gesture_right_swipe.png)
-
-Note that all images in a particular video subfolder have the same dimensions but different videos may have different dimensions. Specifically, videos have two types of dimensions - either 360x360 or 120x160 (depending on the webcam used to record the videos).
 
 ## Two Architectures: 3D Convs and CNN-RNN Stack
 
@@ -428,5 +399,3 @@ Model Summary
 
 Model 5 gave us **test accuracy of 87% and validation accuracy of 87%** using all the 30 frames. The same model is submitted for the review. 
 While we did try model lesser frames by using even frames but we felt more comfortable using full frame. Cropping and other preprocessing also did not affect much on the final accuracy.
-
-Link to modle ->  https://drive.google.com/open?id=12wMsLnLGYWCK9B9AKIfoGjxx5pZkRr3h
